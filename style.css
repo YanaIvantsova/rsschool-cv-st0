@@ -1,12 +1,38 @@
-h2 {
-    font: italic bold 24px/1.2 Arial, sans-serif;
-    text-decoration: underline;
+* {
+    box-sizing: border-box;
 }
 
-h1 {
-    font: normal bold 28px/1.2 Arial, sans-serif;
-    color: rgb(125, 61, 185);
+html {
+    scroll-behavior: smooth;
+  }
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
 }
-body{
-    background-color: rgb(234, 228, 244);
+
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+  }
+
+  .nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+  }
+
+.avatar {
+    height: 224px;
+    width: 224px;
+    border-radius: 120px;
+}
+
+
+.logo {
+    width: 70px;
+    height: 50px;
+
 }
