@@ -3,6 +3,12 @@
   scroll-behavior: smooth;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .container {
   max-width: 1000px;
   margin: 0 auto;
@@ -34,6 +40,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
 
+
   >* {
     flex-basis: auto;
   }
@@ -46,6 +53,7 @@
   letter-spacing: 0px;
   text-align: center;
   color: #000000;
+  padding-top: 20px;
 }
 
 .subtitle {
@@ -67,15 +75,54 @@
 .logo {
   width: 70px;
   height: 50px;
-
 }
 
+
+/* Main*/
+.main__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.section {
+  width: 45%;
+  padding: 10px;
+  margin: 5px;
+  border-bottom: #e0cfc5 2px solid;
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}
+
+.email,
+.git {
+  text-decoration: none;
+  color: #9d7964;
+}
+
+
+.code {
+  background-color: #e0cfc590;
+  padding: 10px 0;
+}
+
+
+.bayan {
+  width: 50%;
+  height: 50%;
+  padding-left: 30px;
+}
 
 /*Footer*/
 .footer__container {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 30px;
   background-image: linear-gradient(#FFFFFF, #e0cfc5);
   border-bottom: 5px solid #fcfafa;
   font-size: 24px;

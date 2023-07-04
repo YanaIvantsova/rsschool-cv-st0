@@ -41,88 +41,95 @@
 
 
     <main class="main">
-        <div class="container">
-
-            <article class="left">
-
-                <section class="section">
-                    <div class="about">
-                        <h2 class="section-title">About</h2>
-                        I am a beginner in programming. I decided to get a new profession because of moving to another
-                        country. I know how to study, about what say 6 years at the medicine university. I have good
-                        communication skills, as I have been in contact with more than 20 different people every day as
-                        a doctor for
-                        more than 5 years.
-                        <hr class="hor">
-                    </div>
-                </section>
-
-                <section class="section" id="profile">
+        <div class="container main__container">
 
 
-                    <h2 class="section-title" id="contacts"> Contacts</h2>
-                    <ul>
-                        <li>Location: Wroclaw, Poland </li>
-                        <li>Phone: +48 572 122 584</li>
-                        <li>E-mail: <a href="mailto:yaivantsova@yandex.by"> yaivantsova@yandex.by</a> </li>
-                        <li> GitHub: <a href="https://github.com/YanaIvantsova"> YanaIvantsova </a></li>
-                    </ul>
-                    <hr class="hor">
-                </section>
+
+            <section class="section">
+                <div class="about">
+                    <h2 class="section-title">About</h2>
+                    I am a beginner in programming. I decided to get a new profession because of moving to another
+                    country. I know how to study, about what say 6 years at the medicine university. I have good
+                    communication skills, as I have been in contact with more than 20 different people every day as
+                    a doctor for
+                    more than 5 years.
+
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title"> Contacts</h2>
+                <ul>
+                    <li>Location: Wroclaw, Poland </li>
+                    <li>Phone: +48 572 122 584</li>
+                    <li>E-mail: <a class="email" href="mailto:yaivantsova@yandex.by"> yaivantsova@yandex.by</a> </li>
+                    <li>GitHub: <a class="git" href="https://github.com/YanaIvantsova" target="_blank"> YanaIvantsova
+                        </a></li>
+                </ul>
+
+            </section>
 
 
-                <section class="section" id="educate">
-                    <h2 class="section-title" id="education">Education</h2>
-                    <span>2010-2016 Gomel State Medical University <br>2008-2010 Gymnasium №56 of Gomel</span>
-
-                    <hr class="hor">
-                </section>
-
-                <section class="section" id="lang">
-                    <h2 class="section-title" id="languages"> Languages </h2>
-                    <ul>
-                        <li>Russian - native</li>
-                        <li>English - A2</li>
-                        <li>Polish - A2</li>
-                    </ul>
-                </section>
-            </article>
+            <section class="section">
+                <h2 class="section-title">Education</h2>
+                <span>2010-2016 Gomel State Medical University <br>2008-2010 Gymnasium №56 of Gomel</span>
+            </section>
 
 
-            <article class="right">
-                <section class="section" id="myskills">
-                    <h2 class="section-title" id="skills">Skills </h2>
-                    <ul>
-                        <li>JavaScript (Fundamentals)</li>
-                        <li>Java (Fundamentals)</li>
-                        <li>HTML, CSS</li>
-                        <li>Git, GitHub</li>
-                        <li>VsCode, IntelliJ IDEA</li>
-                    </ul>
-                    <hr class="hor">
-                </section>
+
+            <section class="section">
+                <h2 class="section-title"> Languages </h2>
+                <ul>
+                    <li>Russian - native</li>
+                    <li>English - A2</li>
+                    <li>Polish - A2</li>
+                </ul>
+
+            </section>
+
+            <section class="section" id="work">
+                <h2 class="section-title">Work experience</h2>
+                    2016-2021 Gomel city policlinic 1, therapist<br>
+                    2021-2022 Gomel regional clinical hospital, nephrologist
+            </section>
 
 
-                <section class="section" id="work">
-                    <h2 class="section-title">Work experience</h2>
-                    <span id="work-experience">
-                        2016-2021 Gomel city policlinic 1, therapist<br>
-                        2021-2022 Gomel regional clinical hospital, nephrologist
-                    </span>
-                    <hr class="hor">
-                </section>
+
+            <section class="section" id="myskills">
+                <h2 class="section-title">Skills </h2>
+                <ul>
+                    <li>JavaScript (Fundamentals)</li>
+                    <li>Java (Fundamentals)</li>
+                    <li>HTML, CSS</li>
+                    <li>Git, GitHub</li>
+                    <li>VsCode, IntelliJ IDEA</li>
+                    <li>SQL (Fundamentals)</li>
+                </ul>
+
+            </section>
 
 
-                <section class="section" id="code">
-                    <h2 class="section-title" id="code-examples">Code examples</h2>
-                    <pre>
-function digits(n) {
-    return n.toString().length;
+
+
+
+            <section class="section">
+                <h2 class="section-title">Code examples</h2>
+                <pre class="code">
+function highAndLow(numbers) {
+  let arr= numbers.split(' ');
+  let max = Math.max.apply(null, arr);
+  let min = Math.min.apply(null, arr)
+   max + ' ' + min;
 }
                 </pre>
-                </section>
-            </article>
+            </section>
 
+
+            <section class="section">
+                <h2>My projects</h2>
+                <p class="projects"><a href="https://yanaivantsova.github.io/cssBayan/cssBayan/index.html"
+                        target="_blank"><img class="bayan" src="./assets/img/bayan.jpg" alt="project image"> </a></p>
+            </section>
 
         </div>
     </main>
@@ -132,8 +139,9 @@ function digits(n) {
     <footer class="footer">
         <div class="container footer__container">
             <p> 2023 </p>
-            <a class="git__link" href="https://github.com/YanaIvantsova"> GitHub </a>
-            <a href="https://rs.school/js/"> <img class="logo" src="./assets/svg/logo-rs.svg" alt="logo"> </a>
+            <a class="git__link" href="https://github.com/YanaIvantsova" target="_blank"> GitHub </a>
+            <a href="https://rs.school/js/" target="_blank"> <img class="logo" src="./assets/svg/logo-rs.svg"
+                    alt="logo"> </a>
         </div>
 
     </footer>
