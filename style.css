@@ -1,38 +1,88 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-
-html {
-    scroll-behavior: smooth;
-  }
 
 .container {
-    max-width: 1440px;
-    margin: 0 auto;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header__container {
+  padding: 20px 0 20px 0;
 }
 
 
+/* Navigation*/
 .nav-list {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    list-style: none;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  background-color: #e0cfc5;
+}
 
-  .nav-link {
-    padding: 0 20px;
-    line-height: 50px;
+.nav-link {
+  padding: 0 20px;
+  line-height: 50px;
+  transition: .3s;
+  color: #050505;
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  >* {
+    flex-basis: auto;
   }
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 52px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #000000;
+}
+
+.subtitle {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #000000;
+}
 
 .avatar {
-    height: 224px;
-    width: 224px;
-    border-radius: 120px;
+  height: 224px;
+  width: 224px;
+  border-radius: 120px;
 }
 
 
 .logo {
-    width: 70px;
-    height: 50px;
+  width: 70px;
+  height: 50px;
 
+}
+
+
+/*Footer*/
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(#FFFFFF, #e0cfc5);
+  border-bottom: 5px solid #fcfafa;
+  font-size: 24px;
+}
+
+.git__link {
+  margin: 0 100px 0 100px;
+  text-decoration: none;
+  color: #050505;
 }

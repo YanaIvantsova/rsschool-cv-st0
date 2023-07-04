@@ -11,9 +11,8 @@
 </head>
 
 <body>
-
     <header class="header">
-        <div class="container">
+        <div class="container header__container">
             <nav class="navigation">
                 <ul class="nav-list">
                     <li><a href="#about" class="nav-link">About</a></li>
@@ -25,16 +24,16 @@
                     <li><a href="#languages" class="nav-link">Languages</a></li>
                 </ul>
             </nav>
-
-            <div class="container-info">
-                <img class="avatar" src="./assets/img/avatar.jpg" alt="avatar">
-                <div>
-                    <h1 class="name"> YANA IVANTSOVA </h1>
+            <div class="columns">
+                <div class="photo">
+                    <img class="avatar" src="./assets/img/avatar.jpg" alt="avatar">
+                </div>
+                <div class="info">
+                    <h1 class="title"> YANA IVANTSOVA </h1>
                     <p></p>
-                    <h3 class="profession"> Future junior front-end developer </h3>
+                    <h3 class="subtitle"> Future junior front-end developer </h3>
                 </div>
             </div>
-
         </div>
     </header>
 
@@ -70,10 +69,6 @@
                     </ul>
                     <hr class="hor">
                 </section>
-
-
-
-
 
 
                 <section class="section" id="educate">
@@ -135,12 +130,10 @@ function digits(n) {
 
 
     <footer class="footer">
-        <div class="container">
-
+        <div class="container footer__container">
             <p> 2023 </p>
-            <a href="https://github.com/YanaIvantsova"> Yana Ivantsova </a>
+            <a class="git__link" href="https://github.com/YanaIvantsova"> GitHub </a>
             <a href="https://rs.school/js/"> <img class="logo" src="./assets/svg/logo-rs.svg" alt="logo"> </a>
-
         </div>
 
     </footer>
