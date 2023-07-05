@@ -1,12 +1,149 @@
-h2 {
-    font: italic bold 24px/1.2 Arial, sans-serif;
-    text-decoration: underline;
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-h1 {
-    font: normal bold 28px/1.2 Arial, sans-serif;
-    color: rgb(125, 61, 185);
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font: normal 20px 'Oswald', sans-serif;
 }
-body{
-    background-color: rgb(234, 228, 244);
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header__container {
+  padding: 20px 0 20px 0;
+}
+
+/* Navigation*/
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  background-color: #e0cfc5;
+  font: bold 17px 'Playfair Display', serif;
+  padding: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 0 20px;
+  color: #050505;
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.columns>* {
+  flex-basis: auto;
+}
+
+.title {
+  text-align: center;
+  color: #050505;
+  padding-top: 20px;
+  font: bold 48px 'Playfair Display', serif;
+}
+
+.subtitle {
+  text-align: center;
+  color: #050505;
+  font: bold 28px 'Playfair Display', serif;
+}
+
+.avatar {
+  height: 224px;
+  width: 224px;
+  border-radius: 120px;
+}
+
+.logo {
+  width: 70px;
+  height: 50px;
+}
+
+/* Main*/
+.main__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.section {
+  width: 45%;
+  padding: 10px;
+  margin: 5px;
+  border-bottom: #e0cfc5 2px solid;
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+
+  .nav-list {
+    font-size: 12px;
+    padding: 0;
+  }
+}
+
+.email,
+.git {
+  text-decoration: none;
+  color: #050505;
+}
+
+.code {
+  background-color: #e0cfc590;
+  padding: 10px 0;
+}
+
+.bayan {
+  width: 90%;
+  height: 90%;
+  padding-left: 30px;
+}
+
+.my-project {
+  margin-bottom: 0;
+}
+
+.project__link {
+  font-size: 15px;
+  padding-left: 30px;
+  color: #050505;
+  text-decoration: none;
+}
+
+/*Footer*/
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  background-image: linear-gradient(#FFFFFF, #e0cfc5);
+  font: bold 20px 'Playfair Display', serif;
+}
+
+.git__link {
+  margin: 0 100px 0 100px;
+  text-decoration: none;
+  color: #050505;
+}
+
+.git__link:hover,
+.project__link:hover,
+.nav-link:hover {
+  text-decoration: underline;
+  color: #9d7964;
+  transition: 0.3s;
 }
