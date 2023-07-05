@@ -7,6 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font: normal 20px 'Oswald', sans-serif;
 }
 
 .container {
@@ -18,7 +19,6 @@ body {
   padding: 20px 0 20px 0;
 }
 
-
 /* Navigation*/
 .nav-list {
   display: flex;
@@ -26,20 +26,21 @@ body {
   align-items: center;
   list-style: none;
   background-color: #e0cfc5;
+  font: bold 17px 'Playfair Display', serif;
+  padding: 20px;
 }
 
 .nav-link {
+  text-decoration: none;
   padding: 0 20px;
-  line-height: 50px;
-  transition: .3s;
   color: #050505;
 }
+
 
 .columns {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-
 
   >* {
     flex-basis: auto;
@@ -47,22 +48,16 @@ body {
 }
 
 .title {
-  font-size: 48px;
-  font-weight: 500;
-  line-height: 52px;
-  letter-spacing: 0px;
   text-align: center;
-  color: #000000;
+  color: #050505;
   padding-top: 20px;
+  font: bold 48px 'Playfair Display', serif;
 }
 
 .subtitle {
-  font-size: 28px;
-  font-weight: 300;
-  line-height: 36px;
-  letter-spacing: 0px;
   text-align: center;
-  color: #000000;
+  color: #050505;
+  font: bold 28px 'Playfair Display', serif;
 }
 
 .avatar {
@@ -71,12 +66,10 @@ body {
   border-radius: 120px;
 }
 
-
 .logo {
   width: 70px;
   height: 50px;
 }
-
 
 /* Main*/
 .main__container {
@@ -96,25 +89,38 @@ body {
   .section {
     width: 100%;
   }
+  .nav-list {
+    font-size: 12px;
+    padding: 0;
+  }
 }
 
 .email,
 .git {
   text-decoration: none;
-  color: #9d7964;
+  color: #050505;
 }
-
 
 .code {
   background-color: #e0cfc590;
   padding: 10px 0;
 }
 
-
 .bayan {
-  width: 50%;
-  height: 50%;
+  width: 90%;
+  height: 90%;
   padding-left: 30px;
+}
+
+.my-project {
+  margin-bottom: 0;
+}
+
+.project__link {
+  font-size: 15px;
+  padding-left: 30px;
+  color: #050505;
+  text-decoration: none;
 }
 
 /*Footer*/
@@ -124,12 +130,19 @@ body {
   justify-content: center;
   margin-top: 30px;
   background-image: linear-gradient(#FFFFFF, #e0cfc5);
-  border-bottom: 5px solid #fcfafa;
-  font-size: 24px;
+  font: bold 20px 'Playfair Display', serif;
 }
 
 .git__link {
   margin: 0 100px 0 100px;
   text-decoration: none;
   color: #050505;
+}
+
+.git__link:hover,
+.project__link:hover,
+.nav-link:hover {
+  text-decoration: underline;
+  color: #9d7964;
+  transition: 0.3s;
 }
