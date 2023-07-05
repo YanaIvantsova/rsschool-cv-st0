@@ -36,15 +36,15 @@ body {
   color: #050505;
 }
 
-
 .columns {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 
-  >* {
-    flex-basis: auto;
-  }
+}
+
+.columns>* {
+  flex-basis: auto;
 }
 
 .title {
@@ -89,6 +89,7 @@ body {
   .section {
     width: 100%;
   }
+
   .nav-list {
     font-size: 12px;
     padding: 0;
